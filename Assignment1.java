@@ -55,7 +55,26 @@ public class Assignment1{
             
             //to calculate and print the mean and standard deviation//
             
+            double sum = 0;
+            for (int mark : marks) {
+                sum += mark;
+            }
             
+            double mean = sum / marks.length;
+            
+            double squaredDiffSum = 0;
+            for (int mark : marks) {
+                double diff = mark - mean;
+                squaredDiffSum += diff * diff;
+            }
+            
+            double varience = squaredDiffSum / marks.length;
+            double stdDeviation = Math.sqrt(varience);
+            
+            System.out.println("Mean: " + mean);
+            System.out.println("Standard Deviation: " + stdDeviation);
+            
+            scanner.close();
             }
         
     }
