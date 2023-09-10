@@ -18,11 +18,33 @@ public class Assignment1{
       
       for (int i = 0; i <30; i++) {
           int mark;
-          do 
-{
+          boolean validInput = false;
+          
+          do {
               System.out.print("Student mark" +(i +1) + ":")
               mark = scanner.nextInt();
               
+              // for invalid input to show an error messege//
+              
+              if (mark < 0 || mark > 30) {
+                  System.out.println("Invalid mark.");
+              }
+            } while (mark < 0 || mark >30);
+            
+            marks[i] = mark;
+            
+            //to update the marks//
+            
+            if (mark > highestMark) {
+                highestMark = mark;
+            }
+            
+            if (mark < lowestMark) {
+                lowestmark = mark;
+            }
+            }
+            
+            
             }
         
     }
