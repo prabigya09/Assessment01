@@ -18,12 +18,12 @@ public class Assignment1{
       int lowestMark = 31;
       
       for (int i = 0; i <30; i++) {  //A loop counter variable i is set to 0 and continues until i is less than 30//
-          int mark;
+          int mark; // declared the variable name 'mark'.//
           boolean validInput = false;
           
           do {
               System.out.print("Student mark" +(i +1) + ":" );
-              mark = scanner.nextInt();
+              mark = scanner.nextInt(); // stores the integer input provided bu the user in the mark variable//
               
               // for invalid input to show an error messege//
               
