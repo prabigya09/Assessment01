@@ -6,7 +6,7 @@ public class Assignment1{
     public static void main(String[] args) {
         // To display the name of the Assignment//
 
-      System.out.println("Enter the name of your Assignment: ");
+      System.out.println("Name of your Assignment: ");
       Scanner scanner = new Scanner(System.in); 
       String assignmentName = scanner.nextLine();
       
@@ -17,7 +17,7 @@ public class Assignment1{
       int highestMark = -1;
       int lowestMark = 31;
       
-      for (int i = 0; i <30; i++) {
+      for (int i = 0; i <30; i++) {  //A loop counter variable i is set to 0 and continues until i is less than 30//
           int mark;
           boolean validInput = false;
           
