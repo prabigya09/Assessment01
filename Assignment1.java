@@ -48,6 +48,14 @@ public class Assignment1{
             
             System.out.println("Assignment Name: " + assignmentName);
             
+            // highest and lowest marks//
+            
+            System.out.println("Highest mark: " + highestmark);
+            System.out.println(" Lowest mark: " + lowestmark);
+            
+            //to calculate and print the mean and standard deviation//
+            
+            
             }
         
     }
