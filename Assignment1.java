@@ -32,7 +32,7 @@ public class Assignment1{
               }
             } while (mark < 0 || mark >30);
             
-            marks[i] = mark;
+            marks[i] = mark; // Students Mark has been stored//
             
             //to update the marks//
             
@@ -70,10 +70,10 @@ public class Assignment1{
             }
             
             double varience = squaredDiffSum / marks.length;
-            double stdDeviation = Math.sqrt(varience);
+            double stdDeviation = Math.sqrt(varience); // The square root of the varience gives the standard deviation//
             
-            System.out.println("Mean: " + mean);
-            System.out.println("Standard Deviation: " + stdDeviation);
+            System.out.println("Mean: " + mean); // prints the calculated mean//
+            System.out.println("Standard Deviation: " + stdDeviation);// prints standard deviation//
             
             scanner.close();
             }
