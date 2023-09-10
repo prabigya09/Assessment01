@@ -11,6 +11,11 @@ public class Assignment1{
       
       // input student's marks for the Assignment1//
       // lets say we have 30 students,lowest marks can be 0 and highest marks can be 30//
+      // lets Initialize the lowest value//
+      int[] marks = new int[30];
+      int highestMark = -1;
+      int lowestMark = 31;
+      
       
       
       
