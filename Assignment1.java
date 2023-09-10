@@ -44,6 +44,9 @@ public class Assignment1{
             }
             }
             
+            // to print the assignment name //
+            
+            System.out.println("Assignment Name: " + assignmentName);
             
             }
         
