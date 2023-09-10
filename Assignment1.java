@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class Assignment1{
+
     public static void main(String[] args) {
         // To display the name of the Assignment//
 
@@ -21,7 +22,7 @@ public class Assignment1{
           boolean validInput = false;
           
           do {
-              System.out.print("Student mark" +(i +1) + ":")
+              System.out.print("Student mark" +(i +1) + ":" );
               mark = scanner.nextInt();
               
               // for invalid input to show an error messege//
@@ -40,7 +41,7 @@ public class Assignment1{
             }
             
             if (mark < lowestMark) {
-                lowestmark = mark;
+                lowestMark= mark;
             }
             }
             
@@ -50,8 +51,8 @@ public class Assignment1{
             
             // highest and lowest marks//
             
-            System.out.println("Highest mark: " + highestmark);
-            System.out.println(" Lowest mark: " + lowestmark);
+            System.out.println("Highest mark: " + highestMark);
+            System.out.println(" Lowest mark: " + lowestMark);
             
             //to calculate and print the mean and standard deviation//
             
@@ -78,8 +79,8 @@ public class Assignment1{
             }
         
     }
-}
-}
+
+
     
           
       
