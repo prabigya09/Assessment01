@@ -1,7 +1,11 @@
 
 import java.util.Scanner;
 
-public class Assignment1{
+public class Assessment1
+{
+    double[] studentMarks = new double [30];
+    double mark;
+
 
     public static void main(String[] args) {
         // F1:To display the name of the Assignment//
@@ -12,10 +16,8 @@ public class Assignment1{
       
       // F2:input student's marks for the Assignment1//
       // lets say we have 30 students,lowest marks can be 0 and highest marks can be 30//
-      // lets Initialize the lowest value//
-      int[] marks = new int[30];
-      int highestMark = -1;
-      int lowestMark = 31;
+      // lets Initialize the lowest value and the highest value//
+
       
       for (int i = 0; i <30; i++) {  //A loop counter variable i is set to 0 and continues until i is less than 30//
           int mark; // declared the variable name 'mark'.//
@@ -32,64 +34,77 @@ public class Assignment1{
               }
             } while (mark < 0 || mark >30);
             
-            marks[i] = mark; // Students Mark has been stored//
-            
 
-            }
             
+               
             //F4: to print the assignment name //
             
             System.out.println("Assignment Name: " + assignmentName);
+
+            }
+            scanner.close();
+        }
+            
+            
+        
             
             // F5:highest and lowest marks//
-            
-            double lowestMark= this.lowestMark[0];
-            
-            for(double lowestmark:this.lowestMark){
-                if(mark<lowestMark){
-                    lowestMark=mark;
-                }
-            }
-                return lowestMark;
-            
-            
-            double highestMark= this.highestMark[30];
-            
-            for(double highestMark:this.highestMark){
-                if(mark>highestMark){
-                    highestMark=mark;
-                }
-            }
-            
-            return highestMark;
-            
+            public double findlowestMark() {
     
             
-            //F6:to calculate and print the mean and standard deviation//
+           double lowMark= this.studentMarks[0];
+           
+           for(double mark : studentMarks) {
+               if(mark < lowMark) {
+                   lowMark = mark;
+               }
+           }
+           
+           return lowMark;
+    
+        }
+        
+        public double findhighestMark() {
             
+        
+        double highMark= this.studentMarks[0];
+        for(double mark : studentMarks) {
+            if(mark > highMark){
+                highMark = mark;
+            }
+        }
+        return highMark;
+    }
+        
+            //F6:to calculate and print the mean and standard deviation//
+            public double findmean() {
             double sum = 0;
-            for (int mark : marks) {
+            
+            for (double mark: studentMarks){
                 sum += mark;
             }
             
-            double mean = sum / marks.length;
+            double mean = sum / studentMarks.length;
             
             double squaredDiffSum = 0;
-            for (int mark : marks) {
+            for (double mark : studentMarks) {
                 double diff = mark - mean;
                 squaredDiffSum += diff * diff;
             }
             
-            double varience = squaredDiffSum / marks.length;
+            double varience = squaredDiffSum / studentMarks.length;
             double stdDeviation = Math.sqrt(varience); // The square root of the varience gives the standard deviation//
             
             System.out.println("Mean: " + mean); // prints the calculated mean//
             System.out.println("Standard Deviation: " + stdDeviation);// prints standard deviation//
             
-            scanner.close();
+            return stdDeviation;
+    
+    }
             }
         
-    }
+        
+    
 
 
     
