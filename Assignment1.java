@@ -20,15 +20,20 @@ public class Assignment1{
           int mark;
           do {
               
-          }
-      }
+            }
+        }
+    }
+}
+    
+          
+      
       
       
       
       
         
-    }
     
-}
+    
+
 
 
