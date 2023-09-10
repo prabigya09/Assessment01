@@ -16,6 +16,12 @@ public class Assignment1{
       int highestMark = -1;
       int lowestMark = 31;
       
+      for (int i = 0; i <30; i++) {
+          int mark;
+          do {
+              
+          }
+      }
       
       
       
