@@ -18,11 +18,15 @@ public class Assignment1{
       
       for (int i = 0; i <30; i++) {
           int mark;
-          do {
+          do 
+{
+              System.out.print("Student mark" +(i +1) + ":")
+              mark = scanner.nextInt();
               
             }
-        }
+        
     }
+}
 }
     
           
